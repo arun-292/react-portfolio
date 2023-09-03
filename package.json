@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://arun-292.github.io",
+  "homepage": "https://arun-292.github.io/react-portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
