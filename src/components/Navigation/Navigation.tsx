@@ -23,19 +23,21 @@ const Navigation: React.FC = () => {
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on(
       "click",
       function () {
+        // eslint-disable-next-line @typescript-eslint/no-this-alias, @typescript-eslint/no-explicit-any
+        const temp: any = this;
         if (
           location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-          location.hostname == this.hostname
+            temp.pathname.replace(/^\//, "") &&
+          location.hostname == temp.hostname
         ) {
-          let target = $(this.hash);
+          let target = $(temp.hash);
           target = target.length
             ? target
-            : $("[name=" + this.hash.slice(1) + "]");
+            : $("[name=" + temp.hash.slice(1) + "]");
           if (target.length) {
             $("html, body").animate(
               {
-                scrollTop: target.offset().top - 72,
+                scrollTop: (target?.offset()?.top ?? 72) - 72,
               },
               1000
             );

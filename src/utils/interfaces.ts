@@ -1,4 +1,4 @@
-export interface Projects {
+export interface Project {
   projectName: string;
   skills: string;
   url: string;

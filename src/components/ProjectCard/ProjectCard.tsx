@@ -1,17 +1,16 @@
-import { Projects } from "../../utils/interfaces";
+import { Project } from "../../utils/interfaces";
 import { getImage } from "../../utils/utilityFunctions";
 
 interface Props {
-  project: Projects;
-  key: string;
+  project: Project;
 }
 
-const ProjectCard: React.FC<Props> = ({ project, key }: Props) => {
+const ProjectCard: React.FC<Props> = ({ project }: Props) => {
   return (
     <div
       className="card rounded shadow-sm border-1 m-2"
       style={{ maxWidth: "18rem", minWidth: "18rem" }}
-      key={key}
+      key={project.projectName}
     >
       <div className="card-body p-3">
         <img className="card-img-top" src={getImage(project.imageId)} alt="" />

@@ -1,5 +1,5 @@
 import { GoogleDriveImageId } from "./enums";
-import { Projects } from "./interfaces";
+import { Project } from "./interfaces";
 
 export const SKILLS = [
   { skillName: "React.js", progress: 95 },
@@ -16,7 +16,7 @@ export const SKILLS = [
 
 const GITHUB_PROFILE_URL = "https://github.com/arun-292";
 
-export const PROJECTS: Projects[] = [
+export const PROJECTS: Project[] = [
   {
     projectName: "1. Tshirt Store",
     skills: "MERN",
