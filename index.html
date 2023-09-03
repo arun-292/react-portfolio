@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon-8b1060f1.ico" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-8b1060f1.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- extra -->
     <script
@@ -26,19 +26,27 @@
     />
 
     <title>Arun M Solanki</title>
-    <script type="module" crossorigin src="/assets/index-4e5bb5ee.js"></script>
-    <link rel="stylesheet" href="/assets/index-34f553f8.css">
+    <script type="module" crossorigin src="./assets/index-a4a5bae8.js"></script>
+    <link rel="stylesheet" href="./assets/index-286e6a05.css">
   </head>
   <body>
     <div id="root"></div>
-    
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-    
+    <script>
+      (($) => {
+        // Activate scrollspy to add active class to navbar items on scroll
+        $("body").scrollspy({
+          target: "#mainNav",
+          offset: 75,
+        });
+      })(jQuery); // End of use strict
+    </script>
   </body>
 </html>
