@@ -63,7 +63,7 @@ const Navigation: React.FC = () => {
         </a>
         <a
           className="navbar-brand js-scroll-trigger"
-          href="https://drive.google.com/file/d/1c7ZWhsJCc9HgQJDQB-AfHj8iBx0eVtAo/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Rw9cNnhX6lngKxsoFhAM6fgUMBsJnrPr/view?usp=drive_link"
           target="_blank"
         >
           Resume
